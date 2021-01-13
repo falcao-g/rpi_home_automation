@@ -1,19 +1,19 @@
-import RPi.GPIO as gpio
+import RPi.GPIO as GPIO
 import sys
+	
+GPIO.setmode(GPIO.BOARD)
+GPIO.setwarnings(False)
 
-def inicializaBoard():
-    gpio.setmode(gpio.BOARD)
-    gpio.setwarnings(False)
+def PinOUT(pin):
+	GPIO.setup(pin, GPIO.OUT)
 
-def definePinoSaida(pino):
-    gpio.setup(pino, gpio.OUT)
+def PortSTATE(pin, state):
+	GPIO.output(pin, state)
 
-def escreveParaPorta(pino, estadoPorta):
-    gpio.output(pino, estadoPorta)
 
-pino = int(sys.argv[1])
-estadoPorta = int(sys.argv[2])
+pin = int(sys.argv[1])
+state = int(sys.argv[2])
 
-inicializaBoard()
-definePinoSaida(pino)
-escreveParaPorta(pino, estadoPorta)
+
+PinOUT(pin)
+PortSTATE(pin, state)
