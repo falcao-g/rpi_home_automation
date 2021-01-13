@@ -22,5 +22,5 @@ DEVICE 2 --> Pin 11 (GPIO17)</br>
 6. Connect a 3.3V gpio in the vcc port of the relay
 7. Connect a gnd gpio in the gnd port of the relay
 8. Connect the Pin 7 (GPIO4) in the In1 port of the relay
-9. Connect the Pin 11 (GPIO17) in the In2 port of the relay
+9. Connect the Pin 11 (GPIO17) in the In2 port of the relay</br>
 And now you can connect any device in the relay and control it via web :)
