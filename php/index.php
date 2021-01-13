@@ -1,19 +1,19 @@
 <?php 
 if (isset($_POST['1ON']))
 {
-exec('python /home/pi/Desktop/automate.py 7 0');
+exec('python /home/pi/GPIO/automate.py 7 0');
 }
 if (isset($_POST['1OFF']))
 {
-exec('python /home/pi/Desktop/automate.py 7 1');
+exec('python /home/pi/GPIO/automate.py 7 1');
 }
 if (isset($_POST['2ON']))
 {
-exec('python /home/pi/Desktop/automate.py 11 0');
+exec('python /home/pi/GPIO/automate.py 11 0');
 }
 if (isset($_POST['2OFF']))
 {
-exec('python /home/pi/Desktop/automate.py 11 1');
+exec('python /home/pi/GPIO/automate.py 11 1');
 ?>
 
 <html>
